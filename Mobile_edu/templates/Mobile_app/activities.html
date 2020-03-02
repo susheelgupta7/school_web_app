@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Education</title>
+	{% load static  %}
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+	<!-- Count Down -->
+	<script src="{% static 'js/simplyCountdown.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+				year: d.getFullYear(),
+				month: d.getMonth() + 1,
+				day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+				year: d.getFullYear(),
+				month: d.getMonth() + 1,
+				day: d.getDate(),
+				enableUtc: false
+		});
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FreeHTML5.co
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/owl.theme.default.min.css' %}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Pricing -->
+	<link rel="stylesheet" href="{% static 'css/pricing.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static  'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-right">
+						<p class="site">www.yourdomainname.com</p>
+						<p class="num">Call: +01 123 456 7890</p>
+						<ul class="fh5co-social">
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-facebook2"></i></a></li>
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-twitter2"></i></a></li>
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-dribbble2"></i></a></li>
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<img src="{% static 'images/sih_logo.png' %}" alt=" logo " height="50" width="50" ></div>
+          <div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'Mobile_app:about' %}">About</a></li>
+							<li><a href="{% url 'Mobile_app:courses' %}">Courses</a></li>
+							<li><a href="{% url 'Mobile_app:teacher' %}">Teacher</a></li>
+							<li><a href="{% url 'Mobile_app:activities' %}">Activities</a></li>
+							<li><a href="{% url 'Mobile_app:result' %}">Result</a></li>
+							<li class="has-dropdown">
+								<a href="{% url  'Mobile_app:blog' %}">Blog</a>
+								<ul class="dropdown">
+									<li><a href="#">Public Blogs</a></li>
+									<li><a href="#">Educational BLogs</a></li>
+									<li><a href="#">Fun Activities/ Festivals</a></li>
+									<li><a href="#">Inspirational</a></li>
+								</ul>
+							</li>
+							<li><a href="{% url 'Mobile_app:contact' %}">Contact</a></li>
+							<li class="btn-cta"><a href="{% url 'Mobile_app:user_login' %}"><span>Login</span></a></li>
+							<li class="btn-cta"><a href="{% url 'Mobile_app:register' %}"><span>Signup</span></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<aside id="fh5co-hero">
+		<div class="flexslider">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'images/img_bg_2_2.jpg' %});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1 class="heading-section"style="color:light blue">Extra Curricular Activities and Visits</h1>
+									<h5 style="color:white"> The more difficult the victory, the greater the happpiness in winning.</h5>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</aside>
+
+	<!-- <div id="fh5co-register" style="background-image: url(images/project-5.jpg);"> -->
+		<div id="fh5co-register" style="background-color:#d2ffc9">
+		<div class="overlay"></div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 animate-box">
+				<h1><p align=center>Introduction</p></h1>
+				<h4><p> We will be organising few extra-curricular activities on every saturday that will help in the overall development of the child. Activities will include drawing, painting, speech, story telling, games etc. <br> </p>
+				<p>We will also be conducting few visits for the childrens to malls and historical sites so that children can have bigger horizons, they can dream bigger and get motivated to work for a better living.<br></p>
+				<p>We will also be organising some festival celebration to teach children about importance of festivals.</p></h4>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Upcoming Activities and Visits</h2>
+					<p>Important Announcement : There will be a tour organised for children on date "xyz" to "place xyz".</p>
+				</div>
+			</div>
+			<div class="row row-padded-mb">
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<div class="date text-center"><span>15<br>Feb.</span></div>
+						<h3><a href="#">Drawing Contest</a></h3>
+						<p>Drawing sheet and pencil, colors will be provided. It is a friendly contest and small prizes will be given to one makes best drawing.</p>
+						<p><a href="#">Read More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<div class="date text-center"><span>22<br>Feb.</span></div>
+						<h3><a href="#">Games</a></h3>
+						<p>Children can play games like kho kho, hide and seek, and other tribal games. This is to enhance sportsmanship and fitness to children.</p>
+						<p><a href="#">Read More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<div class="date text-center"><span>29<br>Feb.</span></div>
+						<h3><a href="#">Story Telling</a></h3>
+						<p>Children can tell any story fictional or some of their experiences. This is to enhance public speaking skills of children.</p>
+						<p><a href="#">Read More</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Past events</h2>
+					<p>Some important information</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-img-holder" style="background-image: url({% static 'images/parmarth.png' %});"></a>
+						<div class="blog-text">
+							<h3><a href="#">Republic Day Celebration</a></h3>
+							<span class="posted_on">Jan. 26th</span>
+							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
+							<p>The event was held on the occasion of Republic day. Children were made to hoist flag and were taught about the history of this day and its importance.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-img-holder" style="background-image: url({% static 'images/play2.jpg' %});"></a>
+						<div class="blog-text">
+							<h3><a href="#">Games</a></h3>
+							<span class="posted_on">Jan. 18th</span>
+							<span class="comment"><a href="">51<i class="icon-speech-bubble"></i></a></span>
+							<p>Children were made to play various games. Anjali came 1st in race and dheeraj bagged 1st position in long jump.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-img-holder" style="background-image: url({% static 'images/play3.jpeg' %});"></a>
+						<div class="blog-text">
+							<h3><a href="#">Movie time</a></h3>
+							<span class="posted_on">Jan. 11th</span>
+							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
+							<p>Children were showed a cartoon movie as a part of fun activity. The movie was Tom and Jerry with Sherlock Holmes. Children enjoyed it a lot.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--	<div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
+		<div class="overlay"></div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 animate-box">
+				<div class="date-counter text-center">
+					<h2>Get 400 of Online Courses for Free</h2>
+					<h3>By Mike Smith</h3>
+					<div class="simply-countdown simply-countdown-one"></div>
+					<p><strong>Limited Offer, Hurry Up!</strong></p>
+					<p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
+				</div>
+			</div>
+		</div>
+	</div>   -->
+
+
+	<footer id="fh5co-footer" role="contentinfo" style="background-image: url({% static 'images/img_bg_4.jpg' %}
+
+  );">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-3 fh5co-widget">
+					<h3>Our Initiative</h3>
+					<p>Educated people are the building blocks of a developed nation.<br>Our main aim is to widespread education to all parts of the country.</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Learning</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Course</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Result</a></li>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Teaching</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Growth</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Social Values</a></li>
+						<li><a href="#">Moral Values</a></li>
+						<li><a href="#">Computer Skills</a></li>
+						<li><a href="#">Awareness </a></li>
+						<li><a href="#">Rights</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Activities</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Games</a></li>
+						<li><a href="#">Cartoons</a></li>
+						<li><a href="#">Visit to Malls</a></li>
+						<li><a href="#">Visit to Historical Places</a></li>
+						<li><a href="#">Extracurricular Competitions</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Facilities to students</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Free Education</a></li>
+						<li><a href="#">Air Conditioned Bus</a></li>
+						<li><a href="#">Good Teaching</a></li>
+						<li><a href="#">Free Study Material</a></li>
+
+						<li><a href="#">Opportunities</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">@ Demo for SIH 2020 Student Innovation</small>
+						<small class="block">Designed by Dark_forceS for Smart Education</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+
+	</body>
+</html>

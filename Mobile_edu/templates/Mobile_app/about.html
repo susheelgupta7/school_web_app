@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Education </title>
+	{% load static  %}
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+	<!-- Count Down -->
+	<script src="{% static 'js/simplyCountdown.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+				year: d.getFullYear(),
+				month: d.getMonth() + 1,
+				day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+				year: d.getFullYear(),
+				month: d.getMonth() + 1,
+				day: d.getDate(),
+				enableUtc: false
+		});
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FreeHTML5.co
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/owl.theme.default.min.css' %}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Pricing -->
+	<link rel="stylesheet" href="{% static 'css/pricing.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static  'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-right">
+						<p class="site">www.Mobilising_edu.com</p>
+						<p class="num">Call: +01 123 456 7890</p>
+						<ul class="fh5co-social">
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-facebook2"></i></a></li>
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-twitter2"></i></a></li>
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-dribbble2"></i></a></li>
+							<li><a href="{% static 'css/icomoon.css' % }"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<img src="{% static 'images/logo_mg_kids.jpg' %}" alt=" logo " height="200" width="200" >
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'Mobile_app:about' %}">About</a></li>
+							<li><a href="{% url 'Mobile_app:courses' %}">Courses</a></li>
+							<li><a href="{% url 'Mobile_app:teacher' %}">Teacher</a></li>
+							<li><a href="{% url 'Mobile_app:activities' %}">Activities</a></li>
+							<li><a href="{% url 'Mobile_app:result' %}">Result</a></li>
+							<li class="has-dropdown">
+									<a href="{% url  'Mobile_app:blog' %}">Blog</a>
+								<ul class="dropdown">
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">eCommerce</a></li>
+									<li><a href="#">Branding</a></li>
+									<li><a href="#">API</a></li>
+								</ul>
+							</li>
+							<li><a href="{% url 'Mobile_app:contact' %}">Contact</a></li>
+							<li class="btn-cta"><a href="{% url 'Mobile_app:user_login' %}"><span>Login</span></a></li>
+							<li class="btn-cta"><a href="{% url 'Mobile_app:register' %}"><span>Signup</span></a></li>
+						</ul>
+						<br><br><br>
+						<h1>M.G Kids Genius Acadamy</h1>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</nav>
+
+	<aside id="fh5co-hero">
+		<div class="flexslider">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'images/img_bg_4.jpg' %});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1 class="heading-section">OUR VISION & AIM</h1>It takes Inspiration and hardwork to the point of insanity to create something truly worthwhile for everyone
+
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</aside>
+
+	<div id="fh5co-about">
+		<div class="container">
+			<div class="col-md-6 animate-box">
+				<span>Our Initiative</span>
+				<h2>What is the problem ?</h2>
+				<p>90% of the schools are located in rural area.
+Lack of proper transportation to school, basic infrastructure, qualified teachers, quality of education, examination monitoring & proctoring, lack of standardised Assessment Methods, low awareness of importance of education, etc are just small portion of challenges which holds back the development. <br>
+
+At least 35 million children in India aged 6 – 14 years do not attend school. 53% of girls in the age group of 5 to 9 years are illiterate.
+    Only 53% of habitation has a primary school. In India, only 20% of habitation has a secondary school.  <br>
+   We have come up with an idea of turning buses into mobile schools, for the children belonging to the remote areas and  who cannot go to school because in the mornings they are busy earning their livelihoods and also for those girls who are denied from educating themselves because of their family's security concerns.
+ </p>
+			</div>
+			<div class="col-md-6">
+				<img class="img-responsive" src="{% static 'images/about1.jpeg' %}" alt="Free HTML5 Bootstrap Template">
+			</div>
+		</div>
+	</div>
+
+<div id="fh5co-register" style="background-color:white/*image: url(images/back3.jpeg)*/;">
+		<div class="overlay"></div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 animate-box">
+				<div class="date-counter text-center">
+					<p > <h1 style="color: navy">Development of Rural Education in India</h1><br>
+						<h4 style="color:white ">
+							 We have come up with an idea of turning buses into mobile schools, for the children belonging to the remote areas and  who cannot go to school because in the mornings they are busy
+   earning their livelihoods and also for those girls who are denied from educating themselves because of their family's security concerns.
+
+   These buses are equipped with a digital screen and the students are taught through interactive videos and quizes. We have seen many videos surfacing on the social media where the teachers are seen
+   reciting incorrect spellings. Teaching through structured and pre-recorded, self-explainatory videos based on NCERT eliminates the problem, as even a teacher with no or basic knowledge can now correct and educate themselves
+   and then teach the students, giving rise to local employment at the same time. Moreover this video based learning will keep the students intact. The areas which do not have interet connectivity can run the
+   website through satellite. <br>
+   According to a survey, <br>
+   68% of educators believe that video content stimulates discussions.<br>
+    a. 66% believe video increases student motivation and is preferred by students. <br>
+    b. 62% believe video helps teachers be more effective.<br>
+    These headquarter will serve the purpose of their central examination centres, with external invigilators and evaluators to ensure that no cheating takes place unlike what we know of most of the rural schools and the quality
+   of education is at par with city schools. The buses will be air conditioned, have biometric attendance system to monitor the progress and maintain an authentic database. These buses will start from 6 in the morning to 9 in the evening, taking 4 hour classes in 3 shifts
+   in several areas; to ensure that working children do not miss their schooling.
+Also, conducting schools at the door-step and appointment of female staff predominantly will make sure that no girl is barred from schooling due to local
+   goons, unsafe routes and fear of harassment.
+
+   We will also have monthly parents teacher meeting to ensure that the children are growing in a positive atmosphere with a healthy mindset, lifestyle and values. The parents will be given regular feedback, via SMS service. It will inspire them to work towards achieving these goals rather than look to the daily stuggles they are going through.
+</h4>
+
+</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div id="fh5co-counter" class="fh5co-counters" style="background-image: url({% static 'images/img_bg_4.jpg' %});" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 text-center animate-box">
+							<span class="icon"><i class="icon-book"></i></span>
+							<span class="fh5co-counter js-counter" data-from="0" data-to="350" data-speed="2000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Children who do not attend school ( in lakhs )</span>
+						</div>
+						<div class="col-md-3 col-sm-6 text-center animate-box">
+							<span class="icon"><i class="icon-study"></i></span>
+							<span class="fh5co-counter js-counter" data-from="0" data-to="53" data-speed="2000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Girls Illiteracy ( % )</span>
+						</div>
+						<div class="col-md-3 col-sm-6 text-center animate-box">
+							<span class="icon"><i class="icon-bulb"></i></span>
+							<span class="fh5co-counter js-counter" data-from="0" data-to="53" data-speed="2000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Habitation with only primary school ( % )</span>
+						</div>
+						<div class="col-md-3 col-sm-6 text-center animate-box">
+							<span class="icon"><i class="icon-head"></i></span>
+							<span class="fh5co-counter js-counter" data-from="0" data-to="20" data-speed="2000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Habitation with only secondary school ( % )</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="fh5co-course-categories">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Course categories</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-shop"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Business</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-heart4"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Health &amp; Psychology</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-banknote"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Accounting</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-lab2"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Science &amp; Technology</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-photo"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Art &amp; Media</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-home-outline"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Real Estate</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-bubble3"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Language</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-world"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Web &amp; Programming</a></h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ -->
+
+
+	<div id="fh5co-gallery" class="fh5co-bg-section">
+		<div class="row text-center">
+			<h2><span>Image Gallery</span></h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/index.jpg' %});"></a>
+
+			</div>
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/index_img1.jpeg' %});"></a>
+							</div>
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/index_img3.jpg' %});"></a>
+			</div>
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/1222.jpeg' %});"></a>
+			</div>
+		</div>
+	</div>
+
+		<footer id="fh5co-footer" role="contentinfo" style="background-image: url({% static 'images/img_bg_4.jpg' %});">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-3 fh5co-widget">
+					<h3>Our Initiative</h3>
+					<p>Educated people are the building blocks of a developed nation.<br>Our main aim is to widespread education to all parts of the country.</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Learning</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Course</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Result</a></li>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Teaching</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Growth</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Social Values</a></li>
+						<li><a href="#">Moral Values</a></li>
+						<li><a href="#">Computer Skills</a></li>
+						<li><a href="#">Awareness </a></li>
+						<li><a href="#">Rights</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Activities</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Games</a></li>
+						<li><a href="#">Cartoons</a></li>
+						<li><a href="#">Visit to Malls</a></li>
+						<li><a href="#">Visit to Historical Places</a></li>
+						<li><a href="#">Extracurricular Competitions</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Facilities to students</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Free Education</a></li>
+						<li><a href="#">Air Conditioned Bus</a></li>
+						<li><a href="#">Good Teaching</a></li>
+						<li><a href="#">Free Study Material</a></li>
+
+						<li><a href="#">Opportunities</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">@ Demo for SIH 2020 Student Innovation</small>
+						<small class="block">Designed by Dark_forceS for Smart Education</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	</body>
+</html>
