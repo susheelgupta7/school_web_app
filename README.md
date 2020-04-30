@@ -6,6 +6,9 @@ This is a simple school management app that uses django to do most of the work o
 - Deletestudent,
 - Update student profile.
 - Markentry ,blog ,creativity modules.
+
+### Follow this image for better understanding :
+
 ### Prerequisites
 What things you need to install the software and how to install them
 
