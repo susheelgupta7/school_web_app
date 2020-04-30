@@ -40,7 +40,7 @@ The command above will create a directory called myvenv (or whatever name you ch
 #### Working with virtualenv: Windows
 Start your virtual environment by running:
 ```
-C:\Users\Name\Krishi_Chaupal> myvenv\Scripts\activate
+C:\Users\Name\Susheelgupta> myvenv\Scripts\activate
 ```
 #### Working with virtualenv: Linux and OS X
 Start your virtual environment by running:
