@@ -1,7 +1,8 @@
 # school_web_app
 This is a simple school management app that uses django to do most of the work of managing teacher record,student record and performances.
 ### Features:
-- Multiple users.
+- Teachers record
+- Students Performance
 - Addstudent.
 - Deletestudent,
 - Update student profile.
